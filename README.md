@@ -11,8 +11,8 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 # 2. Sync dependencies
 uv sync
 
-# 3. Set database URL
-export DB_URL="postgresql://..."
+# 3. Create .env file with your database URL
+echo 'DB_URL="postgresql://..."' > .env
 
 # 4. Run the app
 uv run reflex run
